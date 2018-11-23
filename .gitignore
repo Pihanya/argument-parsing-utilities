@@ -38,6 +38,9 @@ cmake-build-debug/
 
 ## Plugin-specific files:
 
+# Target files
+target/
+
 # IntelliJ
 out/
 
