@@ -1,7 +1,5 @@
 package ru.pihanya.opensorce;
 
-import com.sun.istack.internal.NotNull;
-import com.sun.istack.internal.Nullable;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -16,8 +14,8 @@ public class ArgumentInfo {
     this(name, signatures, null);
   }
 
-  public ArgumentInfo(@NotNull String name, @NotNull List<String> signatures,
-      @Nullable String description) {
+  public ArgumentInfo(String name, List<String> signatures,
+      String description) {
     Objects.requireNonNull(name, "Name of the argument cannot be null");
     Objects.requireNonNull(signatures, "Signatures list of the argument cannot be null");
 

@@ -1,6 +1,5 @@
 package ru.pihanya.opensorce.parsing;
 
-import com.sun.istack.internal.NotNull;
 import java.util.Objects;
 import ru.pihanya.opensorce.Argument;
 import ru.pihanya.opensorce.ArgumentInfo;
@@ -9,7 +8,7 @@ public class SimpleParser implements ArgumentParser {
 
   private ArgumentInfoProvider provider;
 
-  public SimpleParser(@NotNull ArgumentInfoProvider provider) {
+  public SimpleParser(ArgumentInfoProvider provider) {
     this.provider = provider;
   }
 
@@ -86,7 +85,7 @@ public class SimpleParser implements ArgumentParser {
     return argumentPart.charAt(0) == '-';
   }
 
-  private String escapeQuotes(@NotNull String str) {
+  private String escapeQuotes(String str) {
     int leftIndex = 0;
     int rightIndex = str.length() - 1;
 

@@ -1,6 +1,5 @@
 package ru.pihanya.opensorce.parsing;
 
-import com.sun.istack.internal.NotNull;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -52,7 +51,7 @@ class MutableParseResult {
     return this;
   }
 
-  public MutableParseResult addException(@NotNull Exception exception) {
+  public MutableParseResult addException(Exception exception) {
     Objects.requireNonNull(exception);
     exceptions.add(exception);
     return this;
